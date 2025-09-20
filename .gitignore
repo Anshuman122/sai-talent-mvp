@@ -1,0 +1,29 @@
+﻿# Python
+__pycache__/
+*.pyc
+.venv/
+env/
+venv/
+
+# Node / React Native / Flutter
+node_modules/
+build/
+dist/
+*.log
+
+# Env & secrets
+.env
+*.db
+
+# AI models / data
+checkpoints/
+*.h5
+*.pt
+*.onnx
+*.mp4
+*.avi
+*.mov
+
+# OS files
+.DS_Store
+Thumbs.db
