@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "broad_jump",
+  "type": "object",
+  "properties": {
+    "distance_cm": {"type": "number"},
+    "takeoff_x_cm": {"type": "number"},
+    "landing_x_cm": {"type": "number"}
+  },
+  "required": ["distance_cm"]
+}
