@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "height",
+  "type": "object",
+  "properties": {
+    "height_cm": {"type": "number", "description": "Athlete's height in centimeters."},
+    "method": {"type": "string", "enum": ["manual", "vision"], "description": "Method of measurement."}
+  },
+  "required": ["height_cm", "method"]
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "vertical_jump",
+  "type": "object",
+  "properties": {
+    "jump_height_cm": {"type": "number"},
+    "flight_time_ms": {"type": "integer"},
+    "takeoff_frame": {"type": "integer"},
+    "landing_frame": {"type": "integer"},
+    "frames_analyzed": {"type": "integer"}
+  },
+  "required": ["jump_height_cm", "flight_time_ms", "frames_analyzed"]
+}

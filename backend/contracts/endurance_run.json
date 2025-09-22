@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "endurance_run",
+  "type": "object",
+  "properties": {
+    "distance_m": {"type": "integer"},
+    "time_ms": {"type": "integer"},
+    "pace_s_per_km": {"type": "number"},
+    "gps_distance_m": {"type": "number"}
+  },
+  "required": ["distance_m", "time_ms", "pace_s_per_km"]
+}

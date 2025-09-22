@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "sprint_30m",
+  "type": "object",
+  "properties": {
+    "time_ms": {"type": "integer"},
+    "split_10m_ms": {"type": "integer"},
+    "average_speed_m_s": {"type": "number"}
+  },
+  "required": ["time_ms", "average_speed_m_s"]
+}

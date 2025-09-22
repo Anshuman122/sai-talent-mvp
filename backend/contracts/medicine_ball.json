@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "medicine_ball",
+  "type": "object",
+  "properties": {
+    "distance_cm": {"type": "number"},
+    "release_velocity_m_s": {"type": "number"},
+    "release_angle_deg": {"type": "number"}
+  },
+  "required": ["distance_cm"]
+}
