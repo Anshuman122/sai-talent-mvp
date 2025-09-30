@@ -101,8 +101,8 @@ if __name__ == '__main__':
     
     try:
         result = analyze_vertical_jump(args.video_path)
-        print("✅ Analysis Successful!")
+        print("Analysis Successful!")
         print(result.model_dump_json(indent=4))
     except Exception as e:
-        print(f"🔴 Analysis Failed: {e}")
+        print(f"Analysis Failed: {e}")
 
