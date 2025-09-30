@@ -19,7 +19,7 @@ def save_sit_and_reach(reach_cm: float):
     
     with open(CONFIG_FILE, 'w') as f:
         json.dump(data, f, indent=4)
-    print(f"✅ Sit and Reach result saved as {reach_cm} cm in '{CONFIG_FILE}'.")
+    print(f"Sit and Reach result saved as {reach_cm} cm in '{CONFIG_FILE}'.")
 
 def get_sit_and_reach() -> Optional[float]:
     """Retrieves the user's sit and reach result from the shared config file."""
