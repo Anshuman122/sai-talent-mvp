@@ -59,7 +59,7 @@ def run_analysis_on_video(db_session_factory: sessionmaker, video_path: str, ath
         print(f"Successfully saved results for test '{test_name}' for athlete {athlete_id}.")
 
     except Exception as e:
-        print(f"🔴 AI analysis failed for video {video_path}. Error: {e}")
+        print(f"AI analysis failed for video {video_path}. Error: {e}")
         
     finally:
         db.close()
