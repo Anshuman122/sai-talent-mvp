@@ -83,17 +83,7 @@ def detect_pose_jumps(frame_data: pd.DataFrame, threshold: float = 0.15) -> List
     return events
 
 def run_all_checks(video_path: str, frame_data: pd.DataFrame, overall_threshold: int = 10) -> CheatingReport:
-    """
-    Runs all available cheat detection checks and compiles a report.
 
-    Args:
-        video_path: Path to the video file for frame-based checks.
-        frame_data: DataFrame containing frame-by-frame pose landmark data.
-        overall_threshold: The total number of minor events to trigger a 'tampering_suspected' flag.
-
-    Returns:
-        A CheatingReport object with all findings.
-    """
     all_events = []
     
     print("Running cheat detection checks...")
