@@ -15,5 +15,5 @@ app.include_router(results.router, prefix="/api/v1", tags=["Results"])
 
 @app.get("/", tags=["Root"])
 def read_root():
-    """A simple root endpoint to confirm the API is running."""
+
     return {"message": "Welcome to the SAI Talent Assessment API"}
