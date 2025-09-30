@@ -20,7 +20,7 @@ def save_height(height_cm: float):
     
     with open(CONFIG_FILE, 'w') as f:
         json.dump(data, f, indent=4)
-    print(f"✅ Height saved as {height_cm} cm in '{CONFIG_FILE}'.")
+    print(f"Height saved as {height_cm} cm in '{CONFIG_FILE}'.")
 
 def get_height() -> Optional[float]:
     """Retrieves the user's height from the shared config file."""
