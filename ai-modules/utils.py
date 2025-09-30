@@ -10,16 +10,7 @@ from .base import VideoProperties
 AI_MODULES_ROOT = Path(__file__).resolve().parent
 
 def load_video_properties(video_path: str) -> Tuple[Optional[cv2.VideoCapture], Optional[VideoProperties]]:
-    """
-    Opens a video file and extracts its core properties.
 
-    Args:
-        video_path: The path to the video file.
-
-    Returns:
-        A tuple containing the opened VideoCapture object and a VideoProperties model.
-        Returns (None, None) if the video cannot be opened.
-    """
     cap = cv2.VideoCapture(video_path)
     if not cap.isOpened():
         print(f"Error: Could not open video file at {video_path}")
@@ -56,17 +47,7 @@ def create_video_writer(output_path: str, fps: float, width: int, height: int) -
     return out
 
 def extract_landmarks(results: any, landmark_enums: List) -> Optional[Dict[str, np.ndarray]]:
-    """
-    Extracts specified landmark coordinates from MediaPipe results.
 
-    Args:
-        results: The results object from a MediaPipe Pose process call.
-        landmark_enums: A list of MediaPipe PoseLandmark enums to extract.
-
-    Returns:
-        A dictionary mapping landmark names to their [x, y, z, visibility] numpy arrays,
-        or None if pose landmarks are not detected.
-    """
     if not results.pose_landmarks:
         return None
 
