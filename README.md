@@ -1,4 +1,4 @@
-# AI-Powered Mobile Platform for Democratizing Sports Talent Assessment
+# AI-Powered Mobile Platform for Democratizing Sports Talent Assessment-Team Loud(64517)
 
 ## Introduction & Problem Context
 India possesses vast, untapped athletic talent, especially in rural and remote regions. However, systemic issues—primarily high costs, lack of infrastructure, and reliance on subjective, manual scouting—have historically prevented this talent from being discovered.
