@@ -19,7 +19,7 @@ def save_weight(weight_kg: float):
     
     with open(CONFIG_FILE, 'w') as f:
         json.dump(data, f, indent=4)
-    print(f"✅ Weight saved as {weight_kg} kg in '{CONFIG_FILE}'.")
+    print(f"Weight saved as {weight_kg} kg in '{CONFIG_FILE}'.")
 
 def get_weight() -> Optional[float]:
     """Retrieves the user's weight from the shared config file."""
