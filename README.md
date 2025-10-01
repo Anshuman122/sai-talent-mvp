@@ -1,13 +1,16 @@
-# AI-Powered Mobile Platform for Democratizing Sports Talent Assessment-Team Loud(64517)
+# 🏅 AI-Powered Mobile Platform for Democratizing Sports Talent Assessment  
+### Team Loud (ID: 64517)
 
-## Introduction & Problem Context
+---
+
+## 📌 Introduction & Problem Context
 India possesses vast, untapped athletic talent, especially in rural and remote regions. However, systemic issues—primarily high costs, lack of infrastructure, and reliance on subjective, manual scouting—have historically prevented this talent from being discovered.
 
 This project offers an innovative solution by transforming the low-cost smartphone into a professional-grade, standardized, and unbiased tool for athletic assessment. By harnessing **Edge AI (TinyML)** and **Computer Vision**, we decentralize the talent discovery process, ensuring that every athlete is evaluated purely on their dedication and performance, regardless of their location or financial status. This creates a genuine level playing field, which is critical for India's sporting future.
 
 ---
 
-## Current Achievements & System Status
+## 🚀 Current Achievements & System Status
 
 ### Offline-First Mobile Application  
 - Developed using **Flutter/Dart** for seamless, single-codebase deployment on Android and iOS.  
@@ -28,7 +31,7 @@ This project offers an innovative solution by transforming the low-cost smartpho
 
 ---
 
-## Technical Architecture: A Deep Dive
+## 🏗 Technical Architecture: A Deep Dive
 
 ### I. Frontend & On-Device Processing (The Edge)
 
@@ -66,34 +69,13 @@ This project offers an innovative solution by transforming the low-cost smartpho
 
 ---
 
-## 🧠 The Brain: Activity-Specific Analysis Models (The Core Innovation)
+## 🧠 The Brain: Activity-Specific Analysis Models
 
-| # | Activity/Test | Model Architecture | Core Logic & Focus | Metric Calculation |
-|---|---------------|--------------------|-------------------|--------------------|
-| 1 | Vertical & Broad Jump (Power) | CNN-LSTM Regression | Predicts initial take-off velocity (v₀) from CoM. | Jump height (h = v₀² / 2g). |
-| 2 | Sit and Reach (Flexibility) | Pose Estimation + Temporal Analysis | Tracks furthest wrist position relative to hip/ankle anchor. | Horizontal distance (cm). |
-| 3 | 4x10m Shuttle Run (Agility) | Transformer-based Sequence Model | Detects valid turns and sprint phases. | Total time via frame count. |
-| 4 | Sit-ups (Muscular Endurance) | CNN-LSTM Classification | Calculates torso-thigh angle thresholds for valid reps. | Count of valid/partial/invalid reps. |
-| 5 | Medicine Ball Throw (Power) | Pose + Object Tracker Hybrid | Tracks kinetic chain and ball trajectory. | Estimates release velocity & angle to predict distance. |
-| 6 | 30m Sprint (Linear Speed) | DeepSORT Tracking | Tracks athlete torso bounding box start to finish. | Time via frame counting. |
-| 7 | Endurance Runs (Gait Analysis) | Sensor Fusion (Vision + GPS) | Combines stride length, cadence, fatigue prediction. | Stride length, cadence, fatigue score. |
-| 8 | Height and Weight | Scale Calibration via Landmark Ratios | Estimates real-world height from normalized landmarks. | Height (cm), predicted Weight (kg). |
-| 9 | Push-ups (Upper Body Endurance) | Temporal CNN Classification | Valid reps based on elbow angle & torso alignment. | Count and Form Score. |
-| 10 | Plank Hold (Core Strength) | Anomaly Detection | Monitors hip-shoulder-knee alignment. | Total time until form break. |
-| 11 | T-Test Agility (Lateral Agility) | DeepSORT + Transition Classifier | Confirms valid cone touch-down/direction changes. | Time + penalty for misses. |
-| 12 | Overhead Squat Assessment (Mobility) | Regression on Key Joint Angles | Predicts Mobility Score and flags faults. | Score (0-100). |
-| 13 | Single Leg Balance (Stability) | Time Series Stability Model | Analyzes micromotions of torso/ankle keypoints. | Stable time and Stability Index. |
-| 14 | Power Clean/Snatch Form (Weightlifting) | HMM on Angle Input | Models kinematic phases for technique. | Technical Score and weakest phase. |
-| 15 | Tennis Serve Velocity (Skill/Speed) | Object Tracking + Pose | Tracks ball exit velocity and kinetic chain. | Ball speed (km/h), Efficiency Score. |
-| 16 | Bowling Action Analysis (Cricket) | Temporal Graph Neural Network | Detects illegal arm flexion and alignment. | Arm Flexion Angle and Performance Score. |
-| 17 | Yo-Yo Intermittent Recovery Test | DeepSORT + Activity Recognition | Tracks acceleration, deceleration, and recovery. | Distance covered and recovery flags. |
-| 18 | Vertical Power Jumps (Plyometrics) | Kinematic Symmetry Detector | Siamese Network compares left/right kinematics. | Asymmetry Index and contact time. |
-| 19 | Reaction Time Test (Cognitive Speed) | Event Detection CNN | Monitors visual cue change to movement onset. | Reaction time (ms). |
-| 20 | Side Plank (Lateral Core Strength) | Classification Head on Angle Variance | Monitors lateral sag angle over time. | Total time until sag exceeds threshold. |
+(Full list of 20+ models for Sit-ups, Broad Jump, Shuttle Run, Medicine Ball Throw, Push-ups, Plank, etc. — all implemented with CNN-LSTM, Transformers, and Hybrid Pose+Object trackers.)
 
 ---
 
-## Trustworthiness & Security
+## 🔒 Trustworthiness & Security
 
 | Module | Purpose | Mechanism |
 |--------|---------|-----------|
@@ -108,8 +90,6 @@ This project offers an innovative solution by transforming the low-cost smartpho
 ## 📸 Showcase & Demo
 
 ### Flutter App Screens
-Here are resized **portrait screenshots** of the mobile app interface:
-
 <p align="center">
   <img src="./Public/Flutter/Flutter_0.jpeg" alt="Flutter Screen 0" height="500"/>
   <img src="./Public/Flutter/Flutter_1.jpeg" alt="Flutter Screen 1" height="500"/>
@@ -121,28 +101,39 @@ Here are resized **portrait screenshots** of the mobile app interface:
 ---
 
 ### Sample Output Videos
-These are example video outputs generated by the AI pipeline (resized with controls):
-
-<video src="./Public/Output/Sit-ups.mp4" width="500" controls></video>  
-<video src="./Public/Output/broad-jump.mp4" width="500" controls></video>  
-<video src="./Public/Output/medicine-ball.mp4" width="500" controls></video>  
-<video src="./Public/Output/shuttle-run.mp4" width="500" controls></video>  
+- [Sit-ups Video](./Public/Output/Sit-ups.mp4)  
+- [Broad Jump Video](./Public/Output/broad-jump.mp4)  
+- [Medicine Ball Video](./Public/Output/medicine-ball.mp4)  
+- [Shuttle Run Video](./Public/Output/shuttle-run.mp4)  
 
 ---
 
-## Future Roadmap (Long-Term Vision)
+## 🖼️ System Visuals
 
-- **Wearable Fusion:** Integrate vision data with physiological data from low-cost smart bands and GPS watches for holistic performance analysis.
-- **Advanced Predictive Analytics:** Forecast injury risk, monitor burnout potential, and predict peak performance windows.
-- **AI-Driven Career Guidance:** Match athletes’ profiles to suitable sports using recommendation engines.
-- **National Integration:** Achieve full multilingual support and integrate as the official screening tool for the Khelo India Games.
+### AI Models Overview  
+![AI Models](./Team_Loud_AI_Models.png)
+
+### Cheat Detection Pipeline  
+![Cheat Detection](./Team_Loud_Cheat_Detection.png)
+
+### Project Architecture  
+![Architecture](./Team_Loud_Project_Architecture.png)
+
+### New Visual  
+![New Visual](./bbec92bf-1373-41ac-860e-a790afb31b91.png)
 
 ---
 
-## Contributing / Contact
+## 🛣 Future Roadmap
 
+- **Wearable Fusion:** Integrate vision data with physiological data from low-cost smart bands and GPS watches.  
+- **Advanced Predictive Analytics:** Forecast injury risk, burnout, and performance peaks.  
+- **AI-Driven Career Guidance:** Match athletes to optimal sports via recommendation engines.  
+- **National Integration:** Full multilingual support + official integration with Khelo India Games.  
 
-**Team Name – Team Loud **
+---
 
-**Team ID – 64517**
+## 🤝 Contributing / Contact
 
+**Team Name – Team Loud**  
+**Team ID – 64517**  
