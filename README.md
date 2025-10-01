@@ -109,7 +109,7 @@ This project offers an innovative solution by transforming the low-cost smartpho
   <img src="./Public/Flutter/Flutter_2.jpeg" alt="Flutter Screen 2" height="500"/>
   <img src="./Public/Flutter/Flutter_3.jpeg" alt="Flutter Screen 3" height="500"/>
   <img src="./Public/Flutter/Flutter_4.jpeg" alt="Flutter Screen 4" height="500"/>
-  <img src="./Public/Flutter/Flutter_5.jpeg" alt="Flutter Screen 5" height="500"/>
+  <img src="./Public/Flutter/Flutter_5.png" alt="Flutter Screen 5" height="500"/>
 </p>
 
 ---
