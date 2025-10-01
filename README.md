@@ -104,7 +104,7 @@ This project offers an innovative solution by transforming the low-cost smartpho
 
 ### Flutter App Screens
 <p align="center">
-  <img src="./Public/Flutter/Flutter_0.jpeg" alt="Flutter Screen 0" height="500"/>
+  <img src="./Public/Flutter/Flutter_0.png" alt="Flutter Screen 0" height="500"/>
   <img src="./Public/Flutter/Flutter_1.jpeg" alt="Flutter Screen 1" height="500"/>
   <img src="./Public/Flutter/Flutter_2.jpeg" alt="Flutter Screen 2" height="500"/>
   <img src="./Public/Flutter/Flutter_3.jpeg" alt="Flutter Screen 3" height="500"/>
