@@ -69,6 +69,19 @@ This project offers an innovative solution by transforming the low-cost smartpho
 
 ---
 
+## 🖼️ System Visuals
+
+### AI Models Overview  
+![AI Models](./Public/Team_Loud_Project_Architecture/Team_Loud_AI_Models.png)
+
+### Cheat Detection Pipeline  
+![Cheat Detection](./Public/Team_Loud_Project_Architecture/Team_Loud_Cheat_Detection.png)
+
+### Project Architecture  
+![Architecture](./Public/Team_Loud_Project_Architecture/Team_Loud_Project_Architecture.png)
+
+---
+
 ## 🧠 The Brain: Activity-Specific Analysis Models
 
 (Full list of 20+ models for Sit-ups, Broad Jump, Shuttle Run, Medicine Ball Throw, Push-ups, Plank, etc. — all implemented with CNN-LSTM, Transformers, and Hybrid Pose+Object trackers.)
@@ -108,20 +121,6 @@ This project offers an innovative solution by transforming the low-cost smartpho
 
 ---
 
-## 🖼️ System Visuals
-
-### AI Models Overview  
-![AI Models](./Public/Team_Loud_Project_Architecture/Team_Loud_AI_Models.png)
-
-### Cheat Detection Pipeline  
-![Cheat Detection](./Public/Team_Loud_Project_Architecture/Team_Loud_Cheat_Detection.png)
-
-### Project Architecture  
-![Architecture](./Public/Team_Loud_Project_Architecture/Team_Loud_Project_Architecture.png)
-
-
----
-
 ## 🛣 Future Roadmap
 
 - **Wearable Fusion:** Integrate vision data with physiological data from low-cost smart bands and GPS watches.  
@@ -134,4 +133,4 @@ This project offers an innovative solution by transforming the low-cost smartpho
 ## 🤝 Contributing / Contact
 
 **Team Name – Team Loud**  
-**Team ID – 64517**  
+**Team ID – 64517**
