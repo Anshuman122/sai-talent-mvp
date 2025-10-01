@@ -111,16 +111,14 @@ This project offers an innovative solution by transforming the low-cost smartpho
 ## 🖼️ System Visuals
 
 ### AI Models Overview  
-![AI Models](./Team_Loud_AI_Models.png)
+![AI Models](./Public/Team_Loud_Project_Architecture/Team_Loud_AI_Models.png)
 
 ### Cheat Detection Pipeline  
-![Cheat Detection](./Team_Loud_Cheat_Detection.png)
+![Cheat Detection](./Public/Team_Loud_Project_Architecture/Team_Loud_Cheat_Detection.png)
 
 ### Project Architecture  
-![Architecture](./Team_Loud_Project_Architecture.png)
+![Architecture](./Public/Team_Loud_Project_Architecture/Team_Loud_Project_Architecture.png)
 
-### New Visual  
-![New Visual](./bbec92bf-1373-41ac-860e-a790afb31b91.png)
 
 ---
 
